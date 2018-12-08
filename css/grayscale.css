@@ -55,7 +55,7 @@
     -webkit-transition: none;
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 1.0);
   }
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
@@ -78,7 +78,7 @@
     color: #E84A27;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: rgba(19,41,75, 0.8);
   }
   #mainNav.navbar-shrink .nav-link.active {
     color: #E84A27;
@@ -102,7 +102,7 @@
 }
 
 .masthead .container #header {
-  padding-top: 350px;
+  padding-top: 250px;
 }
 .masthead h1 {
   font-family: 'Varela Round';
@@ -117,6 +117,11 @@
 .masthead h2 {
   max-width: 20rem;
   font-size: 1rem;
+}
+
+/* Reduce padding on hero down caret */
+.mb-5, .my-5 {
+  margin-bottom: 0rem!important;
 }
 
 @media (min-width: 768px) {
@@ -167,7 +172,7 @@
 }
 
 .btn-primary:active {
-  background-color: #467370 !important;
+  background-color: rgba(19,41,75, 0.8) !important;
 }
 
 .about-section {
@@ -178,6 +183,28 @@
 
 .about-section p {
   margin-bottom: 5rem;
+}
+
+.team-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding-top: 10rem;
+  /* padding: 15rem 0; */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.2)), color-stop(75%, rgba(22, 22, 22, 0.6)), to(#161616)), url("../img/team_3.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.2) 0%, rgba(22, 22, 22, 0.6) 75%, #161616 100%), url("../img/team_3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.team-section p {
+  margin-bottom: 5rem;
+}
+.team-section .container {
+  padding-top: 100px;
 }
 
 .projects-section {
@@ -253,7 +280,7 @@ footer .social a:active {
 }
 
 body {
-  font-family: 'Nunito';
+  font-family: 'Montserrat', Helvetica, sans-serif;
   letter-spacing: 0.0625em;
 }
 
@@ -274,6 +301,22 @@ a:focus, a:hover {
   background-color: #E84A27 !important;
 }
 
+.bg-text {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    border: 10px solid #f1f1f1;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+}
+
 .text-primary {
   color: #E84A27 !important;
 }
@@ -281,3 +324,10 @@ a:focus, a:hover {
 footer {
   padding: 3rem 0;
 }
+
+/* .img-fluid {
+  transition: transform .45s;
+}
+.img-fluid:hover {
+  transform: scale(1.02);
+} */
