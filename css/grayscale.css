@@ -115,13 +115,13 @@
 }
 
 .masthead h2 {
-  max-width: 20rem;
+  /* max-width: 20rem; */
   font-size: 1rem;
 }
 
 /* Reduce padding on hero down caret */
 .mb-5, .my-5 {
-  margin-bottom: 0rem!important;
+  margin-bottom: 1rem!important;
 }
 
 @media (min-width: 768px) {
@@ -176,7 +176,7 @@
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 4rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
