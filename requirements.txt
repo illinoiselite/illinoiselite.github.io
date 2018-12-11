@@ -4,6 +4,6 @@ heroku==0.1.4
 itsdangerous==1.1.0
 Jinja2==2.10
 MarkupSafe==1.1.0
-requests==2.18.1
+requests==2.20.0
 Werkzeug==0.14.1
 wheel==0.24.0
