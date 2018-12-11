@@ -93,8 +93,8 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/team_header.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/team_header.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/jaro_landing.png");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/jaro_landing.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -206,14 +206,6 @@
 .team-section .container {
   padding-top: 100px;
 }
-
-/* .filterDiv {
-  display: none;
-}
-
-.show {
-  display: block;
-} */
 
 .projects-section {
   padding: 10rem 0;
@@ -333,9 +325,44 @@ footer {
   padding: 3rem 0;
 }
 
-/* .img-fluid {
-  transition: transform .45s;
+.filterDiv {
+  display: none;
 }
-.img-fluid:hover {
-  transform: scale(1.02);
-} */
+
+.show {
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
