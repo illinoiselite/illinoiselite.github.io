@@ -7,6 +7,7 @@
 #mainNav {
   min-height: 56px;
   background-color: rgba(19,41,75, 0.7);
+  height: 85px;
 }
 
 #mainNav .navbar-toggler {
@@ -150,7 +151,7 @@
 .btn {
   -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
+  /* padding: 1.25rem 2rem; */
   font-family: 'Varela Round';
   font-size: 80%;
   text-transform: uppercase;
@@ -261,6 +262,13 @@
   border: 0;
 }
 
+footer {
+  padding: 1rem 0;
+}
+footer .row {
+  justify-content: center!important;
+  padding: 10px;
+}
 footer .social a {
   text-align: center;
   height: 3rem;
@@ -278,6 +286,7 @@ footer .social a:hover {
 footer .social a:active {
   color: #fff;
 }
+
 
 body {
   font-family: 'Montserrat', Helvetica, sans-serif;
@@ -320,18 +329,13 @@ a:focus, a:hover {
 .text-primary {
   color: #E84A27 !important;
 }
-
-footer {
-  padding: 3rem 0;
-}
-
-.filterDiv {
+/* .filterDiv {
   display: none;
 }
 
 .show {
   display: block;
-}
+} */
 
 .row {
   display: flex;
